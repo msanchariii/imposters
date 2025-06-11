@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const TechCraftHomePage = () => {
@@ -15,26 +16,26 @@ const TechCraftHomePage = () => {
                     <div className="flex overflow-x-auto -mx-4 pb-4">
                         <div className="flex items-stretch p-4 gap-6 min-w-full md:min-w-0">
                             <ProjectCard
-                                image="[https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60)"
+                                image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
                                 title="E-commerce Platform for Local Artisans"
                                 description="A vibrant platform connecting skilled local artisans with a global marketplace, featuring secure transactions and personalized storefronts."
                             />
                             <ProjectCard
-                                image="[https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60](https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60)"
+                                image="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60](https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60)"
                                 title="Interactive Portfolio for Creative Professionals"
                                 description="A dynamic and visually engaging portfolio website showcasing creative work with interactive galleries and seamless navigation."
                             />
                             <ProjectCard
-                                image="[https://images.unsplash.com/photo-1550005865-9a23613f3b2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVybmV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60](https://images.unsplash.com/photo-1550005865-9a23613f3b2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVybmV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60)"
-                                title="Smart Home Automation System"
-                                description="An intuitive system allowing users to control lighting, security, and appliances remotely through a unified mobile application."
+                                image="https://images.pexels.com/photos/7679642/pexels-photo-7679642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                title="Custom Software Solution for Business Operations"
+                                description="A tailored software solution designed to streamline business operations, enhance productivity, and provide real-time analytics."
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Client Testimonials Section */}
-                <section className="py-8 bg-gray-50 rounded-lg">
+                <section className="py-8 rounded-lg">
                     <h2 className="text-[#101418] text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">
                         Client Testimonials
                     </h2>
@@ -123,7 +124,7 @@ const HeroSection = () => {
                     className="relative flex min-h-[400px] md:min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 md:p-16"
                     style={{
                         backgroundImage:
-                            'linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://images.unsplash.com/photo-1519389950473-47a60ed72f9b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlY2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80")',
+                            'linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
                     }}
                 >
                     <div className="flex flex-col gap-3 text-center">
@@ -136,22 +137,19 @@ const HeroSection = () => {
                             landscape.
                         </h2>
                     </div>
-                    <button className="relative inline-flex items-center justify-center px-6 py-3 text-lg font-semibold text-[#101418] bg-[#b2cbe5] rounded-md hover:bg-[#a3b7cf] transition-colors duration-300">
+                    <Link
+                        href={"/quote"}
+                        className="relative inline-flex items-center justify-center px-6 py-3 text-lg font-semibold text-[#101418] bg-[#b2cbe5] rounded-md hover:bg-[#a3b7cf] transition-colors duration-300 cursor-pointer"
+                    >
                         <span className="truncate">Get a Quote</span>
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
     );
 };
 
-type ProjectCardProps = {
-    image: string;
-    title: string;
-    description: string;
-};
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard = ({
     image,
     title,
     description,
@@ -161,22 +159,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     description: string;
 }) => {
     return (
-        <div className="flex h-full flex-1 flex-col gap-4 rounded-lg bg-white shadow-md overflow-hidden">
+        <div className="flex flex-col gap-3 p-3 hover:ring-2 hover:ring-[#197fe56a] transition-shadow duration-300 rounded-lg bg-white cursor-pointer">
             <div
-                className="w-full bg-center bg-no-repeat aspect-video bg-cover"
-                style={{ backgroundImage: `url(${image})` }}
-            >
-                <div className="relative w-full h-full hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                    <button className="absolute opacity-0 hover:opacity-100 transition-opacity duration-300 bg-[#197fe5] text-white font-semibold rounded-md px-4 py-2 text-sm">
-                        View Project
-                    </button>
-                </div>
-            </div>
-            <div className="p-4">
-                <p className="text-[#101418] text-lg font-semibold leading-tight mb-2">
+                className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                style={{ backgroundImage: `url("${image}")` }}
+            ></div>
+            <div>
+                <p className="text-[#0e141b] text-base font-medium leading-normal">
                     {title}
                 </p>
-                <p className="text-[#5c728a] text-sm font-normal leading-relaxed">
+                <p className="text-[#4e7397] text-sm font-normal leading-normal">
                     {description}
                 </p>
             </div>

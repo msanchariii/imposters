@@ -6,5 +6,6 @@
 }
 
 .select-btn {
-    background-image: var(--select-button-svg);
+    /* background-image: var(--select-button-svg); */
+    background-repeat: no-repeat;
 }

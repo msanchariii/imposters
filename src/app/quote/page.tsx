@@ -208,7 +208,7 @@ const GetQuotePage = () => {
 
                             <div className="flex px-4 py-3">
                                 <button
-                                    type="submit" // Set type to submit for form submission
+                                    type="submit"
                                     className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#197ce5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
                                 >
                                     <span className="truncate">
