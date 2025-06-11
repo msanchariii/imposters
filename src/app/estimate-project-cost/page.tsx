@@ -188,10 +188,7 @@ const ProjectCostEstimatorPage = () => {
                                     onChange={(e) =>
                                         setWebsiteType(e.target.value)
                                     }
-                                    className="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e141b] focus:outline-0 focus:ring-0 border-none bg-[#e7edf3] focus:border-none h-14 bg-[image:var(--select-button-svg)] bg-right bg-no-repeat bg-origin-content pr-10 placeholder:text-[#4e7397] p-4 text-base font-normal leading-normal"
-                                    style={{
-                                        "--select-button-svg": `url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(78,115,151)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e')`,
-                                    }}
+                                    className="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e141b] focus:outline-0 focus:ring-0 border-none bg-[#e7edf3] focus:border-none h-14 bg-[image:var(--select-button-svg)] bg-right bg-no-repeat bg-origin-content pr-10 placeholder:text-[#4e7397] p-4 text-base font-normal leading-normal select-btn"
                                 >
                                     {websiteTypes.map((type) => (
                                         <option
@@ -293,7 +290,6 @@ const FeatureCheckbox = ({
                 onChange={onChange}
                 className="h-5 w-5 rounded border-[#d0dbe7] border-2 bg-transparent text-[#197fe5] checked:bg-[#197fe5] checked:border-[#197fe5] focus:ring-0 focus:ring-offset-0 focus:border-[#d0dbe7] focus:outline-none"
                 style={{
-                    "--checkbox-tick-svg": `url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(248,250,252)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e')`,
                     backgroundImage: checked
                         ? "var(--checkbox-tick-svg)"
                         : "none",
@@ -302,6 +298,7 @@ const FeatureCheckbox = ({
                     backgroundRepeat: "no-repeat",
                 }}
             />
+
             <p className="text-[#0e141b] text-base font-normal leading-normal">
                 {label}
             </p>
