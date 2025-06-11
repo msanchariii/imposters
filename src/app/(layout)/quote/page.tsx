@@ -314,7 +314,7 @@ const SelectInput = ({
                     name={name}
                     value={value}
                     onChange={onChange}
-                    className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border border-[#d0dbe7] bg-slate-50 focus:border-[#d0dbe7] h-14 bg-[image:var(--select-button-svg)] placeholder:text-[#4e7297] p-[15px] text-base font-normal leading-normal"
+                    className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border border-[#d0dbe7] bg-slate-50 focus:border-[#d0dbe7] h-14 pr-4 placeholder:text-[#4e7297] p-[15px] text-base font-normal leading-normal"
                 >
                     {options.map((option) => (
                         <option
